@@ -7,10 +7,10 @@ import { CategoriaController } from "./controllers/categoria.controller";
 
 
 @Module({
-    imports: [TypeOrmModule.forFeature([Categoria])],
+    imports: [TypeOrmModule.forFeature([Categoria]), ],
     providers: [CategoriaService],
     controllers: [CategoriaController],
-    exports: [],
+    exports: [CategoriaService],
 
 })
 
